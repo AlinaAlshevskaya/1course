@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Шахматная доска</title>
+        <style>
+            table{
+            border-collapse: collapse;}
+            td{border:2px solid black;}
+            
+           
+            thead td{ empty-cells: hide;
+            width: 40px;height: 20px;
+            background-color: lightgrey;
+            text-align: center;}
+            tfoot td{width:40px; empty-cells: hide;
+            background-color: lightgrey;
+            text-align: center;
+            height: 20px;}
+            thead td:first-child{width: 20px; border: none; background-color: white;}
+            thead td:last-child{width: 20px;border: none; background-color: white;}
+            tfoot td:first-child{width: 20px;border: none; background-color: white;}
+            tfoot td:last-child{width: 20px;border: none; background-color: white;}
+            
+
+            
+            tbody>tr>td:first-child{ width: 20px; height: 40px;
+            background-color: lightgrey;
+            text-align: center;}
+             tbody>tr:nth-child(odd)>td:nth-child(2n+3){background-color: black;}
+            tbody>tr:nth-child(even)>td:nth-child(2n+2){background-color: black;}
+            tbody>tr:nth-child(even)>td:last-child{background-color: lightgrey;}
+
+            
+            tbody>tr>td:last-child{ width: 20px;height: 40px;
+            background-color: lightgrey;
+            text-align: center;}
+           
+            
+
+        </style>
+        </head>
+        <body>
+            <table>
+                <thead >
+                <tr>
+                    <td></td>
+                    <td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td>
+                    <td></td>
+                </tr>
+                </thead>
+                <tdody>
+                    <tr>
+                        <td>8</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>1</td>
+                    </tr>
+                    <tfoot>
+                        <td></td>
+                        <td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td>
+                        <td></td>
+                    </tfoot>
+                    
+                </tdody>
+            </table>
+        </body>

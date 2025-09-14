@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="1 задание.css" media="all">
+        <link href="link.css" rel="stylesheet" media="(min-width: 1280px)">
+        <title></title>
+        <style>
+          @media (max-width: 768px){
+              h3{
+                  color: red;
+              }
+          }
+      </style>
+    </head>
+    <body>
+          <div class="title">
+            <h2>Flexbox-верстка</h2>
+
+            <div class="menu">
+              <input id="ch" type="checkbox">
+              <label class="menu_btn" for="ch"><span></span></label>
+
+                <div class="menu_item">
+              <label><a href="#div1">Видео</a></label>
+              <label><a href="#div2">Flexbox-верстка</a></label>
+              <label><a href="#div3">Аудио</a></label>
+            </div>
+
+          </div>
+         </div>
+
+
+          <div id="div1" class="div1">
+            <video src="the-weeknd-die-for-you_242419.mp4" width="300px" height="180px" controls="controls" preload="auto"></video>
+            <video src="belly-the-weeknd-die-for-it-feat-nas_104136.mp4" width="300px" height="180px" controls="controls" preload="auto"></video>
+            <video src="the-weeknd-heartless_216900.mp4" width="300px" height="180px" controls="controls" preload="auto"></video>
+          </div>
+
+          <div id="div2"class="div2"><span style="font-size: 110%;"><b> Flexbox разметка </b></span>в CSS даёт один из наиболее эффективных способов расстановки, выравнивания и распределения места между элементами внутри контейнера, даже если их размер неизвестен или динамичен (собственно, по этому его и называют flex, от слова flexible, что по-английски имеет двойственное значение — гибкий и уступчивый, что очень сочетается с моделью поведения flexbox).
+
+            Основной целью flexbox является предоставление возможности изменения своих элементов по ширине и высоте, для того, чтобы они максимально эффективно умещались в доступном месте родительского контейнера, в частности — это удобно в тех случаях, когда нужно соответствовать всем типам дисплеев устройств и размерам экранов. Flex контейнер расширяет вложенные элементы для того, чтобы заполнить доступное пространство или же урезает их, чтобы избежать переполнения.
+            
+            Очень важный момент, flexbox независим от направления, в отличие от обычных шаблонов, блочная модель основана на вертикальном размещении элементов, а инлайновая на горизонтальной. Пока это достаточно хорошо работало на простых страницах (и сайтах), эти недостатки в гибкости довольно сильно влияли на поддержку больших и сложных приложений, особенно когда дело касалось смены ориентирования, ресайзинга, растягивания или наоборот сокращения элементов.
+            
+            Учтите, что Flexbox лучше всего подходит для компонентов в приложении и для не масштабных шаблонов. Существует Grid модель разметки, которая предназначена для работы с большими шаблонами и комплексными приложениями. Именно этот момент очень хорошо и доступно расписан в статьях — Решающая CSS битва: Grid против Flexbox и Когда нужно использовать Flexbox
+          </div>
+
+          <div id="div3"class="div3">
+            <p>The Weeknd - Die For You</p>
+            <audio src="The_Weeknd_-_Die_For_You_48209316.mp3" controls preload="auto"></audio>
+            <p>The Weeknd Daft Punk - Starboy</p>
+            <audio src="The_Weeknd_Daft_Punk_-_Starboy_47829067.mp3" controls preload="auto"></audio>
+            <p>he Weeknd- Cant Feel My Face</p>
+            <audio src="The_Weeknd_-_Cant_Feel_My_Face_47966152.mp3" controls preload="auto"></audio>
+          </div>
+
+          <div class="music"><h3>Music</h3></div> 
+        <div class="carobka">
+          <img src="d:\Documents\кяр\лб9\1.jpg">
+          <img src="d:\Documents\кяр\лб9\2.jpg">
+          <img src="d:\Documents\кяр\лб9\9.jpg">
+          <img src="d:\Documents\кяр\лб9\4.jpg">
+          <img src="d:\Documents\кяр\лб9\5.jpg">
+          <img src="d:\Documents\кяр\лб9\6.jpg">
+          <img src="d:\Documents\кяр\лб9\7.jpg">
+          <img src="d:\Documents\кяр\лб9\8.jpg">
+        </div>
+        
+    </body>
+</html>

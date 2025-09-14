@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: purple;
+  font-family: "Monotype Corsiva";
+}
+
+.ul1 {
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+.ul2 {
+  color: yellow;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.ul3 {
+  color: green;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+}
+
+table td {
+  color: darkgreen;
+}
+
+table {
+  border-collapse: collapse;
+  width: 500px;
+}
+table td {
+  border: 1px solid;
+  padding: 12px;
+}
+
+p {
+  background-color: blue;
+  font: 16pt Arial;
+}
+
+.imInf {
+  font-style: oblique;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#circ {
+  fill: purple;
+}

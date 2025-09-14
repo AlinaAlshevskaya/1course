@@ -1,0 +1,110 @@
+@import 'per.scss';
+
+a{text-decoration: none;
+    color: black;
+    width:$widthnav;
+    border: solid red 2px;
+    display: inline-block;
+    height:heightfromwidth($widthnav);
+    @extend %textalign;
+    line-height: heightfromwidth($widthnav);
+    padding: 0px 10px;}
+   
+
+nav a{vertical-align: middle;
+    margin-left:10px;
+    margin-top:30px;}
+
+div{display: inline-block}
+
+header{@extend %padding;
+
+nav { float:right;
+    }
+.logo{
+     margin-right:100px;
+    width:$logowidth;
+    height:($logowidth/3)px;
+}
+}
+article{
+    @extend %padding;
+    width:$article-width;
+    display: inline-block;
+    
+    h1{text-align: center;
+        clear: both;
+        font-size:$hfontsize  ;}
+    .div12{
+    @include article-div($hfontsize, $article-div-width);
+    margin-right:(100-3*$article-div-width)/3;
+    }
+    .div3{
+        @include article-div($hfontsize,$article-div-width);
+        }
+    img{width:$article-img-width;
+    height:$article-img-height;
+margin-right: 5px;
+margin-left: 5px;}
+}
+aside{
+    float:right;
+    width:$aside-width;
+    form{
+        display: inline-block;
+        margin-top: 45px;
+        label {
+            display:block;
+            width: 150px;
+            text-align: left;
+            margin-bottom: 15px;
+            display: inline-block;
+            color:red;
+            size: 1.2em;
+        }
+        input[type="text"]{
+            color:black;            
+            size: 1.2em;
+            border-radius:4px;
+            width: 200px;
+        }
+        input[type="email"]{           
+            color:black;            
+            size: 1.2em;
+            border-radius:4px;
+            width: 200px;
+        }
+        button{
+            background-color: rgb(117, 19, 19);           
+            color: white;
+            padding: 10px;
+            border-radius: 6px;            
+        }
+    }
+    img{
+        width: $aside-img-width;
+        height: $aside-img-width;
+        float:left;
+        margin-right: 5px;
+    }
+    .div56{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+}
+footer{
+    background-color: gray;
+    p{
+        text-align: left;
+        color:rgb(255, 255, 255);
+        font-size: 10pt;
+    }
+    @function heightfromwidth($widthnav) {
+        @return 0.4*$widthnav;
+        }
+        
+}
+
+    
+    
+

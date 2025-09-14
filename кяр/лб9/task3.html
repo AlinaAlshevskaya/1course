@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> CSS VS HTML5</title>
+        <style>
+        div{border:1px black solid; 
+            padding: 10px;}
+        .grid {
+            display:grid;
+            grid-template-areas: 
+            "x y w"
+            "x2 y2 w2"
+            "x3 y3 w3";
+            grid-template-columns: 
+            10% 69% 20%;
+            grid-gap: 5px;
+            border:none}
+            a:visited {color:black;text-decoration: none;}
+            a:link{color:black;text-decoration: none;}
+ 
+ </style>
+ </head>
+ <body>
+    <div class="grid">
+        <div style="grid-area: x;grid-row:1/3;grid-column:1/2">
+            <ul>
+            <li><a href="https://medium.com/swlh/an-introduction-to-html-css-4084c798e5f">An Introduction to HTML & CSS</a></li>
+            <li><a href="https://developer.mozilla.org/ru/docs/Learn/CSS/First_steps/Getting_started">Начало работы с CSS</a></li>
+            <li><a href="https://vpavlenko.github.io/web-programming/01-html-css/LECTURE.html">HTML и CSS</a></li>
+            <li><a href="https://www.w3schools.com/html/html_css.asp">HTML Styles - CSS</a></li>
+            </ul>
+        </div>
+        <div style="grid-area: y;grid-row:1/2;grid-column:2/4"><h2>Использование CSS</h2>
+            CSS используется создателями веб-страниц для задания цветов, шрифтов, стилей, расположения отдельных блоков и других аспектов представления внешнего вида этих веб-страниц. Основной целью разработки CSS является ограждение и отделение описания логической структуры веб-страницы (которое производится с помощью HTML или других
+             языков разметки) от описания внешнего вида этой веб-страницы (которое теперь производится с помощью формального языка CSS). Такое разделение может увеличить доступность документа, предоставить большую гибкость и возможность управления его представлением, а также уменьшить сложность и повторяемость в структурном содержимом.
+            
+            Кроме того, CSS позволяет представлять один и тот же документ в различных стилях или методах вывода, таких как экранное представление, печатное представление, чтение голосом (специальным голосовым браузером или программой чтения с экрана) или при выводе устройствами, использующими шрифт Брайля
+        </div>
+        <div style="grid-area: y2;">
+            <h2>WHAT IS HTML5?</h2>
+            HTML5 is a programming language whose acronym stands for Hyper Text Markup Language. It is a system that allows the modification of the appearance of web pages, as well as making adjustments to their appearance. It also used to structure and present content for the web.<br>
+            With HTML5, browsers like Firefox, Chrome, Explorer, Safari and more, can know how to display a particular web page, know where the elements are, where to put the images and where to place the text.<br>
+            Apart from HTML5, there are other languages that are necessary to give format and interactivity to a site, but the basic structure of any page is first defined in the HTML5 language.
+            <h2>ADVANTAGES</h2>
+            <h3>IT’S FREE</h3>            
+            You don’t need any special software to start programming in HTML5, you can even start programming in a notepad, save the document as HTML and view it from any browser. However, you can use a free code editor like Notepad+++, Atom, Eclipse, which offers basic functions like color differentiation between tags and content. It’s really recommended to use a code editor instead of a text file, as it doesn’t separate tags from content and can be more complicated to make corrections.            
+            <h3>STRUCTURE</h3>           
+            Through the incorporation of new tags such as: header, section or footer, among others, the HTML document can be structured in different parts, providing not only an appearance but also semantic content to our entire website.<br>            
+            HTML code can be easily separated between tags and content, allowing the developer to work more effectively and detect errors more quickly.<br>            
+            The tags are clear and descriptive, so the developer can start coding without any problems. It’s really easy and simple language to understand in this new version.
+        </div>
+        <div style="grid-area: w2;">
+            <h2>What is CSS?</h2>
+            Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media. CSS is one of the core languages of the open Web and is standardized across Web browsers. Previously development of various parts of CSS specification was done synchronously, which allowed versioning of the latest recommendation. You might have heard about CSS1, CSS2.1, CSS3. However, CSS4 has never become an official version.<br>   
+            CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.
+        </div>
+        <div style="grid-area: x3;grid-row:3/4;grid-column:1/4">
+            В этом уроке мы рассмотрели несколько способов стилизации документа с использованием CSS. Мы будем развивать эти знания по мере прохождения остальных уроков. Однако вы уже знаете достаточно, чтобы стилизовать текст, применять CSS на основе различных способов нацеливания на элементы в документе и искать свойства и значения в документации MDN.
+        </div>
+        </div>
+ </body>

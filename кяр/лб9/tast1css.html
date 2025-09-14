@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css</title>
+        <style>
+            div{border:1px solid black; 
+                padding: 10px;}
+            .grid {
+               display: grid;
+               grid-template-columns: 46.5% 46.5% 6%;
+               
+               grid-gap: 5px;
+               border:none;}
+            h1{writing-mode: vertical-lr;
+               text-orientation: upright;
+               }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div style="grid-row:1/3;grid-column:1/2"><h2>ADDING CSS TO AN HTML PAGE</h2>
+                CSS is attached to an HTML page in different ways.
+                
+                <h4>1: Using the link tag</h4>
+                The link tag is the way to include a CSS file. This is the preferred way to use CSS as it's intended to be used: one CSS file is included by all the pages of your site, and changing one line on that file affects the presentation of all the pages in the site.<br>
+                
+                To use this method, you add a link tag with the href attribute pointing to the CSS file you want to include. You add it inside the head tag of the site (not inside the body tag):<br>
+                
+        
+                The rel and type attributes are required too, as they tell the browser which kind of file we are linking to.<br>
+                
+                <h4>2: using the style tag</h4>
+                Instead of using the link tag to point to separate stylesheet containing our CSS, we can add the CSS directly inside a style tag. This is the syntax.<br>
+               
+                Using this method we can avoid creating a separate CSS file. I find this is a good way to experiment before “formalising” CSS to a separate file, or to add a special line of CSS just to a file.<br>
+                
+                <h4>3: inline styles</h4>
+                Inline styles are the third way to add CSS to a page. We can add a style attribute to any HTML tag, and add CSS into it.</div>
+                
+            <div><h2>What is CSS?</h2>
+                Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media. CSS is one of the core languages of the open Web and is standardized across Web browsers. Previously development of various parts of CSS specification was done synchronously, which allowed versioning of the latest recommendation. You might have heard about CSS1, CSS2.1, CSS3. However, CSS4 has never become an official version.<br>
+                
+                CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.</div>
+                <div><h2>SELECTORS</h2>
+                    A selector allows us to associate one or more declarations to one or more elements on the page.
+                    
+                    <h4>Basic selectors</h4>
+                    Suppose we have a p element on the page, and we want to display the words into it using the yellow color.<br>
+                    
+                    We can target that element using this selector p, which targets all the element using the p tag in the page. A simple CSS rule to achieve what we want is:<br>
+                
+                    Every HTML tag has a corresponding selector, for example: div, span, img.<br>
+                    
+                    If a selector matches multiple elements, all the elements in the page will be affected by the change.<br>
+                    
+                    </div>
+            <div style="grid-row:1/3;grid-column:3/4"> <h1>CSS</h1></div>
+            
+        
+        </div>

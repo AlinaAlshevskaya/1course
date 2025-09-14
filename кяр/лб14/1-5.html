@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .ellipse:active {
+        fill: red;
+      }
+
+      .gradientTriangle:hover {
+        stroke: pink;
+        stroke-width: 10px;
+      }
+    </style>
+    <title>Lab 14 1</title>
+  </head>
+  <body>
+    <h1>
+      Задание 1. Создайте новый документ svgrafik.html, в котором разместите текст вдоль
+      произвольной кривой. Данный текст разместите по центру, выделите произвольным
+      цветом. Размер шрифта должен составлять 36px.
+    </h1>
+    <svg width="800" height="200">
+      <path
+        id="line"
+        d="M10 80 Q 195 10 280 80 T 550 80"
+        fill="transparent"
+        stroke="black"
+        stroke-width="2px"
+      />
+      <text font-size="36" fill="pink">
+        <textPath href="#line" text-anchor="middle" startOffset="50%">
+          парам пам пам
+        </textPath>
+      </text>
+    </svg>
+    <h1 id="task5">
+      Задание 2. Создайте в документе задания 1 элементы представленные на рис. 14.8
+    </h1>
+    <svg height="500px" width="100%">
+      <circle cx="110px" r="100px" cy="110px" fill="blue" />
+      <rect
+        x="240px"
+        y="10px"
+        width="200px"
+        height="200px"
+        class="animatedSquare"
+        fill="red"
+        stroke="black"
+        stroke-width="2px"
+      >
+        <animate
+          attributeName="stroke-width"
+          from="2px"
+          to="10px"
+          dur="2s"
+          repeatCount="indefinite"
+        ></animate>
+      </rect>
+      <!-- Изменения для эллипса -->
+      <ellipse cx="620px" cy="110px" rx="150px" ry="85px" class="ellipse" fill="green"/>
+      <!-- Изменения для треугольника -->
+      <polygon class="gradientTriangle" points="1000,10 800,210 1200,210">
+        <animate
+          attributeName="fill"
+          from="yellow"
+          to="url(#gradient)"
+          dur="5s"
+          repeatCount="indefinite"
+        ></animate>
+      </polygon>
+      <polyline
+        points="0,230 600,230 500,280 1200,280"
+        fill="transparent"
+        stroke="black"
+        stroke-width="5"
+      />
+    </svg>
+    <h1 >Задание 3</h1>
+    <svg width="400" height="400">
+      <path
+        d="M150 10 L50 110 L125 110  M175 110 L250 110 M250 110 L150 10 Z "
+        fill="transparent"
+        stroke="green"
+        stroke-width="3px"
+      />
+      <path
+        d="M125 110 L25 220 M25 220 L125 220 Z M175 220 L275 220 M275 220 L175 110 Z"
+        fill="transparent"
+        stroke="green"
+        stroke-width="3px"
+      />
+      <path
+        d="M125 220 L125 270 M125 270 L175 270 M175 270 L175 220 Z"
+        fill="transparent"
+        stroke="brown"
+        stroke-width="3px"
+      />
+      <!-- Игрушки -->
+      <path d="M180 80 a10,10 0 1,0 20,0a10,10 0 1,0 -20,0" fill="red" />
+      <path d="M120 60 a10,10 0 1,0 20,0a10,10 0 1,0 -20,0" fill="blue" />
+      <path d="M180 180 a10,10 0 1,0 20,0a10,10 0 1,0 -20,0" fill="blue" />
+      <path d="M80 200 a10,10 0 1,0 20,0a10,10 0 1,0 -20,0" fill="red" />
+      <path d="M110 150 a10,10 0 1,0 20,0a10,10 0 1,0 -20,0" fill="blue" />
+    </svg>
+    <h1>Задание 4</h1>
+    <svg width="1200" height="300">
+      <defs>
+        <path
+          id="heart"
+          d="M100 34.976c0 8.434-3.635 16.019-9.423 21.274h0.048l-31.25 31.25c-3.125 3.125-6.25 6.25-9.375 6.25s-6.25-3.125-9.375-6.25l-31.202-31.25c-5.788-5.255-9.423-12.84-9.423-21.274 0-15.865 12.861-28.726 28.726-28.726 8.434 0 16.019 3.635 21.274 9.423 5.255-5.788 12.84-9.423 21.274-9.423 15.865 0 28.726 12.861 28.726 28.726z"
+        />
+      </defs>
+      <use xlink:href="#heart" transform="translate(50, 50) rotate(30)" />
+      <use xlink:href="#heart" transform="translate(250, 50) scale(1.5)" />
+      <use xlink:href="#heart" transform="translate(450, 50) skewX(45)" />
+      <use xlink:href="#heart" transform="translate(650, 50) skewY(30)" />
+      <use xlink:href="#heart" transform="translate(850, 50) translate(50, -20)" />
+    </svg>
+    <!-- Градиентная заливка для треугольника -->
+    <svg style="display: none">
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color: green" />
+          <stop offset="100%" style="stop-color: orange" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </body>
+</html>

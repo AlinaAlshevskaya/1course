@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="task2.xsl"?>
+<list>
+<product>
+<nameproduct>Альшевская Алина</nameproduct>
+<description>10</description>
+</product>
+<product>
+<nameproduct>Василевский Александр</nameproduct>
+<description>7</description>
+</product>
+<product>
+<nameproduct>Вишневский Илья</nameproduct>
+<description>8</description>
+</product>
+<product>
+<nameproduct>Дубицкий илья</nameproduct>
+<description>6</description>
+</product>
+<product>
+<nameproduct>Дерюго Анна</nameproduct>
+<description>4</description>
+</product>
+<product>
+<nameproduct>Гусак Андрей</nameproduct>
+<description>3</description>
+</product>
+<product>
+<nameproduct>Гусарова Анастасия</nameproduct>
+<description>7</description>
+</product>
+<product>
+<nameproduct>Гучёк Валерия</nameproduct>
+<description>9</description>
+</product>
+<product>
+<nameproduct>Зубарик Яна</nameproduct>
+<description>9</description>
+</product>
+<product>
+<nameproduct>Иванова Виктория</nameproduct>
+<description>8</description>
+</product>
+<product>
+<nameproduct>Кепеть Артём</nameproduct>
+<description>6</description>
+</product>
+<product>
+<nameproduct>Куптель Екатерина</nameproduct>
+<description>2</description>
+</product>
+<product>
+<nameproduct>Луговская Александра</nameproduct>
+<description>5</description>
+</product>
+<product>
+<nameproduct>Станулевич Евгений</nameproduct>
+<description>0</description>
+</product>
+<product>
+<nameproduct>Тишкевич Егор</nameproduct>
+<description>10</description>
+</product>
+</list> 

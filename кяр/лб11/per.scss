@@ -1,0 +1,25 @@
+$logowidth:200px;
+$bordercolor-nav:red;
+$widthnav:120px;
+$hfontsize:20pt;
+%padding{padding: 10px;}
+$article-width:69%;
+$article-div-width:30%;
+$article-img-width:23%;
+$article-img-height:200px;
+$aside-width:29%;
+$aside-img-width:150px;
+%textalign{text-align: center;}
+
+@mixin article-div($hfontsize, $article-div-width){
+    text-align: center;
+    font-size:$hfontsize*0.75 ;
+    width:$article-div-width;
+    position:relative;
+    align-items:flex-start;
+    float:left;
+ }
+
+@mixin header-width-el{ 
+    width:$logowidth;
+    height:($logowidth/3);}

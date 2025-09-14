@@ -1,0 +1,261 @@
+img{width: 300px;
+height:300px ;}
+.img1:hover{transform:scale(0.5)}
+.img2:hover{transform:rotate(45deg);}
+.img3:hover{transform:translate(50px);}
+.img4:hover{transform:skew(-20deg);}
+/*task 2*/
+button{width: 100px; 
+height: 45px;
+background-color: white;}
+.b1:hover{background-color: rgb(0, 0, 0);
+    color:aliceblue;}
+.b2:hover{border:5px red solid;
+    outline: 5px solid yellow;
+}
+.b3:hover{border:none;
+    border-top: green 5px solid;
+    border-bottom: green 5px solid;
+}
+.b4:hover{border:none;
+    border-right: blue 5px solid;
+    border-left: blue 5px solid;
+  }
+.b5:hover{background-image:radial-gradient( yellow, deeppink, rgb(31, 174, 209)) ;}
+/*task 3*/
+.per1{width:300px;height: 300px;margin-right: 50px;
+    transform: perspective( 400px) rotateY(15deg)}
+.per2{width:300px;height: 300px;margin-right: 50px;
+    transform: perspective( 400px) rotateX(20deg)}
+.per3{width:300px;height: 300px;margin-right: 50px;
+    transform: perspective( 400px) rotateY(-15deg)}
+.per4{width:300px;height: 300px;margin-right: 50px;
+    transform: perspective( 400px) rotateX(-20deg)}
+    /*task 4*/
+    @keyframes anim1 {
+        0% {
+            transform: perspective( 400px) rotateY(15deg);
+        }
+        50% {
+            transform: perspective( 0px) rotateY(0 deg);
+        }
+        100%{
+            transform: perspective( 0px) rotateY(0 deg);  
+        }
+        }
+.anime1{
+    animation-name: anim1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay:3s;
+    animation-iteration-count:5;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; }
+
+@keyframes anim2 {
+        0% {
+            transform: perspective( 400px) rotateY(15deg);
+            margin-left:-250px;filter:none;
+        }
+        50% {
+            transform: perspective( 0px) rotateY(0 deg);
+            margin-left:-250px;filter:none;
+        }
+        100%{
+            transform: perspective( 0px) rotateY(0 deg);
+            margin-left:10px;filter:blur(10px);
+        }
+        }
+.anime2{
+    animation-name: anim2;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-iteration-count:5;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    }
+.anime3{
+    animation-name: anim3;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-iteration-count:5;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+     }
+.anime4{
+    animation-name: anim4;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-iteration-count:5;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; 
+    }
+    @keyframes anim3 {
+        0% {
+            transform: perspective( 400px) rotateY(15deg);
+            margin-left:-250px;filter:none;
+        }
+        50% {
+            transform: perspective( 0px) rotateY(0 deg);
+            margin-left:-250px;filter:none;
+        }
+        100%{
+            transform: perspective( 0px) rotateY(0 deg);
+            margin-left:10px;filter:grayscale(1);
+        }
+    }
+    @keyframes anim4 {
+        0% {
+            transform: perspective( 400px) rotateY(15deg);
+            margin-left:-250px;filter:none;
+        }
+        50% {
+            transform: perspective( 0px) rotateY(0 deg);
+            margin-left:-250px;filter:none;
+        }
+        100%{
+            transform: perspective( 0px) rotateY(0 deg);
+            margin-left:10px;filter:invert(1);
+        }
+    }
+    /* task 5*/
+    @keyframes pic1 {
+        80% {
+            position: relative; z-index: 5;
+        }
+        100%{position: relative; z-index: 4;}        
+        }
+.picture1{
+    animation-name: pic1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; }
+    @keyframes pic2 {
+        60% {
+            position: relative; z-index: 5;
+        }
+        80%{position: relative; z-index: 4;}
+        }
+.picture2{
+    animation-name: pic2;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; }
+    @keyframes pic3 {
+    40% {  position: relative; z-index: 5; }
+        60%{position: relative; z-index: 4;}
+        }
+.picture3{
+    animation-name: pic3;
+    animation-duration: 5s;
+    animation-timing-function: liner;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; }
+    @keyframes pic4 {
+        20% {
+            position: relative; z-index: 5;
+        }
+        40%{position: relative; z-index: 4;}
+        }
+.picture4{
+    animation-name: pic4;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; }
+    @keyframes pic5 {
+        0% { position: relative; z-index: 5;}
+       20%{position: relative; z-index: 4;}
+        }
+.picture5{
+    animation-name: pic5;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; }
+.div1{width: 304px;
+height: 304px;
+border:5px solid blueviolet;
+padding:10px}
+/*task 6*/
+@keyframes el1 {
+    0% { left: 0; top: 0; }
+25% { left: 200px; top: 0; }
+50% { left: 0; top: 0; }
+75% { left:-200px; top: 0; }
+100% {left: 0; top: 0; }
+    }
+.el1{ position: relative;
+    animation: el1 8s linear infinite;} 
+ @keyframes el2 {
+    0% { left: 0; top: 0;border-radius: 0%; }
+    25% { left: 200px; top: 0; border-radius: 50%;}
+    50% { left: 0; top: 0;border-radius: 0%; }
+    75% { left:-200px; top: 0;border-radius: 50%; }
+    100% {left: 0; top: 0; border-radius: 0%;}
+        }
+.el2{ position: relative;
+        animation: el2 8s linear infinite;} 
+@keyframes el3 {
+            0% { left:-10%; top: 0; }
+            50%{left:55%}
+        100%{left:110%; top: 0;}
+            }
+ .el3{ position: relative;
+       animation: el3 6s linear infinite;}
+@keyframes el4 {
+                0% { left: 0; top: 0; }
+            25% { left: 0; top: 50px; }
+            50% { left: 0; top: 0; }
+            75% { left:0; top: -50px; }
+            100% {left: 0; top: 0; }
+                }
+.el4{ position: relative;
+      animation: el4 4s linear infinite;} 
+      .el3{ position: relative;
+        animation: el3 6s linear infinite;}
+ @keyframes el5 {
+                  0% { left: 0; top: 0; }
+25% { left: 200px; top: 0; }
+50% { left: 200px; top: 200px; }
+75% { left: 0; top: 200px; }
+100% { left: 0; top: 0; } 
+                 }
+ .el5{ position: relative;
+       animation: el5 4s linear infinite;} 
+/*task7*/
+.div2{width:300px;height: 300px;border:3px solid purple;margin-top:10px}
+@keyframes p {
+    0% { color:palevioletred }
+50% {color:aqua } 
+100%{color:palevioletred}
+   }
+.p{
+animation: p 5s linear infinite;} 
+/*lab8*/
+.menu{width:50px;
+padding: 15px;
+margin-right: 0px;
+display: inline-block;
+border:1px green solid;
+background-color: yellow;
+color:green;
+height: 25px;}
+
+    
+

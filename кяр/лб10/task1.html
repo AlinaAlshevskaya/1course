@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Анимация </title>
+        <link href="style.css" rel="stylesheet" media="all">
+        <style>
+            div{border: 1px solid black}
+            .container {
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+            align-items: flex-start;
+            justify-content: space-around;
+            text-align: center;
+            }
+            .container > * {
+            padding: 10px;
+            flex: 1 100%;}
+            .block1 {
+            order: 1;
+            align-self: flex-start;
+            flex: 1 1 200px;
+            }
+            .block2 {
+            order: 2;
+            align-self: flex-start;
+            flex: 1 1 400px;
+            }
+            .block3 {
+            order: 3;
+            align-self: flex-start;
+            flex: 1 1 200px;
+            }
+            .headline{
+                text-align: center;
+                flex: 1 1 100%;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="headline">
+                <h1>Flex-вёрстка</h1>
+             </div >
+            <div class="block1"> 
+                 <video><source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4"></video>
+                 <video src="https://www.youtube.com/watch?v=d8-3ffuTTZ8" type="video/mp4s"  autoplay controls/></video>
+                 <video src="https://www.youtube.com/watch?v=x_t53a5Ons0" type="video/mp4s" controls/></video>
+            </div>
+            <div class="block2">
+                Flexbox разметка в CSS даёт один из наиболее эффективных способов расстановки, выравнивания и распределения места между элементами внутри контейнера, даже если их размер неизвестен или динамичен (собственно, по этому его и называют flex, от слова flexible, что по-английски имеет двойственное значение — гибкий и уступчивый, что очень сочетается с моделью поведения flexbox).<br>
+                Основной целью flexbox является предоставление возможности изменения своих элементов по ширине и высоте, для того, чтобы они максимально эффективно умещались в доступном месте родительского контейнера, в частности — это удобно в тех случаях, когда нужно соответствовать всем типам дисплеев устройств и размерам экранов. Flex контейнер расширяет вложенные элементы для того, чтобы заполнить доступное пространство или же урезает их, чтобы избежать переполнения.<br>                
+                Очень важный момент, flexbox независим от направления, в отличие от обычных шаблонов, блочная модель основана на вертикальном размещении элементов, а инлайновая на горизонтальной. Пока это достаточно хорошо работало на простых страницах (и сайтах), эти недостатки в гибкости довольно сильно влияли на поддержку больших и сложных приложений, особенно когда дело касалось смены ориентирования, ресайзинга, растягивания или наоборот сокращения элементов.<br>                
+                Учтите, что Flexbox лучше всего подходит для компонентов в приложении и для не масштабных шаблонов. Существует Grid модель разметки, которая предназначена для работы с большими шаблонами и комплексными приложениями. Именно этот момент очень хорошо и доступно расписан в статьях — Решающая CSS битва: Grid против Flexbox и Когда нужно использовать Flexbox
+            </div>
+            <div class="block3">
+
+            </div>
+            </div>
+    </body>

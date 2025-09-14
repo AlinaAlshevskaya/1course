@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gallery {
+        display: flex;
+        justify-content: space-between;
+      }
+      .gallery div img {
+        width: 20vw;
+        height: 20vw;
+      }
+      .gallery > div {
+        position: relative;
+      }
+      /* это чтобы размер изо не менялся при наведении(граница без этого не входит в размеры блока и соседние изо двигаются) */
+      /* .img2{
+        box-sizing: border-box;
+      } */
+      .description {
+        box-sizing: border-box;
+        width: 20vw;
+        height: 20vw;
+        display: none;
+        padding: 4vh;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: xx-large;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="item1">
+        <img src="img/1.jpg" alt="" class="img1" />
+        <div class="description">
+          Это просто котик. Он смотрит на тебя. Он милый. Он чего-то хочет от тебя. Может
+          просит погладить его?
+        </div>
+      </div>
+      <div class="item2"><img src="img/2.jpg" alt="" class="img2" /></div>
+      <div class="item3"><img src="img/3.jpg" alt="" class="img3" /></div>
+      <div class="item4"><img src="img/4.png" alt="" class="img4" /></div>
+    </div>
+    <script>
+      // 1 задание
+      let firstImage = document.getElementsByClassName("item1")[0];
+      firstImage.addEventListener("mouseover", function () {
+        let description = document.getElementsByClassName("description")[0];
+        description.style.display = "flex";
+      });
+      firstImage.addEventListener("mouseout", function () {
+        let description = document.getElementsByClassName("description")[0];
+        description.style.display = "none";
+      });
+
+      // 2 задание
+      let secondImage = document.getElementsByClassName("img2")[0];
+      secondImage.addEventListener("click", function () {
+        secondImage.style.border = "10px red solid";
+        setTimeout(function () {
+          secondImage.style.border = "none";
+        }, 300);
+      });
+
+      // 3 задание
+      let thirdImage = document.getElementsByClassName("img3")[0];
+      let lastImage = document.getElementsByClassName("img4")[0];
+      let temSrc = "";
+      lastImage.addEventListener("mouseover", function () {
+        temSrc = lastImage.src;
+        lastImage.src = thirdImage.src;
+        thirdImage.src = temSrc;
+      });
+      lastImage.addEventListener("mouseout", function () {
+        temSrc = lastImage.src;
+        lastImage.src = thirdImage.src;
+        thirdImage.src = temSrc;
+      });
+    </script>
+  </body>
+</html>

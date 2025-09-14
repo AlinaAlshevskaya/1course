@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--FileName: tast1.xml-->
+<?xml-stylesheet type="text/xsl" href ="task1.xsl"?>
+<list>
+<product>
+<nameproduct>Смартфон Apple iPhone 15 Pro 128GB (природный титан)</nameproduct>
+<description>Платформа: iOS
+Экран: 6.1 "
+Технология экрана: OLED
+Разрешение экрана: 1179x2556
+Процессор: Apple A17 Pro
+Оперативная память: 8 Гб
+Встроенная память: 128 Гб
+Камера: 48 Мп
+Аккумулятор: 3274 мАч
+Количество sim-карт: 1 SIM
+Тип sim-карты: Nano-SIM, eSIM
+</description>
+</product>
+<product>
+<nameproduct>Смартфон Apple iPhone 13 Pro 128Gb (небесно-голубой)</nameproduct>
+<description>Платформа: iOS
+Экран: 6.1 "
+Технология экрана: OLED
+Разрешение экрана: 1170x2532
+Процессор: Apple A15 Bionic
+Оперативная память: 6 Гб
+Встроенная память: 128 Гб
+Камера: 12 Мп
+Количество sim-карт: 1 SIM
+Тип sim-карты: Nano-SIM, eSIM
+</description>
+</product>
+<product>
+<nameproduct>Смартфон Apple iPhone 15 128GB (черный)</nameproduct>
+<description>Платформа: iOS
+Экран: 6.1 "
+Технология экрана: OLED
+Разрешение экрана: 1179x2556
+Процессор: Apple A16 Bionic
+Оперативная память: 6 Гб
+Встроенная память: 128 Гб
+Камера: 48 Мп
+Аккумулятор: 3349 мАч
+Количество sim-карт: 1 SIM
+Тип sim-карты: Nano-SIM, eSIM
+</description>
+</product>
+<product>
+<nameproduct>Смартфон Apple iPhone 15 Pro Max 256GB (черный титан)</nameproduct>
+<description>Платформа: iOS
+Экран: 6.7 "
+Технология экрана: OLED
+Разрешение экрана: 1290x2796
+Процессор: Apple A17 Pro
+Оперативная память: 8 Гб
+Встроенная память: 256 Гб
+Камера: 48 Мп
+Аккумулятор: 4422 мАч
+Количество sim-карт: 1 SIM
+Тип sim-карты: Nano-SIM, eSIM
+</description>
+</product>
+<product>
+<nameproduct>Смартфон Apple iPhone 14 Pro Max 128GB (космический черный)</nameproduct>
+<description>Платформа: iOS
+Экран: 6.7 "
+Технология экрана: OLED
+Разрешение экрана: 1290x2796
+Процессор: Apple A16 Bionic
+Оперативная память: 6 Гб
+Встроенная память: 128 Гб
+Камера: 48 Мп
+Количество sim-карт: 1 SIM
+Тип sim-карты: Nano-SIM, eSIM
+</description>
+</product>
+</list> 

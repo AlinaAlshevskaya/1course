@@ -1,0 +1,7 @@
+<!ELEMENT list(head,nproduct,descript,product,description,nameproduct)>
+<!ELEMENT head (#PCDATA)>
+<!ELEMENT product (#PCDATA)>
+<!ELEMENT descript (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT nameproduct (#PCDATA)>
+<!ELEMENT nproduct (#PCDATA)>

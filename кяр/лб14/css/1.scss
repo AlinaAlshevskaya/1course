@@ -1,0 +1,69 @@
+// styles.scss
+
+// Global styles
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  // Headings
+  h1, h2, h3, h4, h5, h6 {
+    color: purple;
+    font-family: 'Monotype Corsiva';
+  }
+  
+  // Lists
+  .ul1 {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+  }
+  
+  .ul2 {
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+  
+  .ul3 {
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+  }
+  
+  // Table
+  table td {
+    color: darkgreen;
+  }
+  table {
+    border-collapse: collapse;
+    width: 500px;
+  
+    td {
+      border: 1px solid; // Add border style as needed
+      padding: 12px;
+    }
+  }
+  
+  // Paragraph
+  p {
+    background-color: blue;
+    font: 16pt Arial;
+  }
+  
+  // Image Information
+  .imInf {
+    font-style: oblique;
+  }
+  
+  // Link Styling
+  a {
+    color: inherit; // Inherit the color from the parent
+    text-decoration: none; // Remove underline from links
+  }
+  
+  // SVG Circles
+  #circ {
+    fill: purple;
+  }
+  
